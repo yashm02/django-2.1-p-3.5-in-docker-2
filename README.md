@@ -22,3 +22,30 @@ PROJECT START STEPS:
             - python manage.py runserver 0.0.0.0:8080
     
     2. Go to http://localhost:8080 in your browser to view it.
+    
+DATABASE PROPERTIES FOR SUBMISSION:
+
+    Replace your DATABASES section in settings.py to connect to MYSQL database for submission:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.mysql',
+            'NAME': config.get('mysql', 'NAME'),
+            'USER': config.get('mysql', 'USER'),
+            'PASSWORD': config.get('mysql', 'PASSWORD'),
+            'HOST': config.get('mysql', 'HOST'),
+            'PORT': config.get('mysql', 'PORT'),
+        }
+    }
+    Or get your mysql database properties in settings.py like:
+    database_name = config.get('mysql', 'NAME')
+    user_name = config.get('mysql', 'USER')
+    user_pass = config.get('mysql', 'PASSWORD')
+    database_host = config.get('mysql', 'HOST')
+    database_port = config.get('mysql', 'PORT')
+
+    Get your mongodb database properties in settings.py for submission like:
+    database_name = config.get('mongodb', 'NAME')
+    user_name = config.get('mongodb', 'USER')
+    user_pass = config.get('mongodb', 'PASSWORD')
+    database_host = config.get('mongodb', 'HOST')
+    database_port = config.get('mongodb', 'PORT')
