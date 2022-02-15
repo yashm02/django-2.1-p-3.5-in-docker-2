@@ -6,5 +6,9 @@ tasks:
       bash database-setup.sh
 ports:
   - port: 8080
-    onOpen: ignore
+    onOpen: open-preview
     visibility: public
+
+vscode:
+  extensions:
+    - ms-python.python
