@@ -15,7 +15,6 @@ Django 2.1 - Python 3.5
         1.c. Run the following command(s) in the terminal/command line to run the app:    
             - python manage.py runserver 0.0.0.0:8080
     
-    2. Go to http://localhost:8080 in your browser to view it.
     
     CLOUD-IDE SETUP STEPS(follow the below steps in case you are using the Cloud IDE instead of your Local IDE):
 	1. Please run the below commands from the project root to setup MySQL and MongoDB in this workspace:
